@@ -1,48 +1,3 @@
--- Создаём ScreenGui
-local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Parent = game:GetService("CoreGui")
-
--- Основная панель
-local Frame = Instance.new("Frame")
-Frame.Parent = ScreenGui
-Frame.Position = UDim2.new(0.5, -250, 0.5, -125)
-Frame.Size = UDim2.new(0, 500, 0, 250)
-Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Frame.BackgroundTransparency = 0.3
-Frame.BorderSizePixel = 0
-Frame.Active = true
-Frame.Draggable = true
-
--- Закругление углов панели
-local UICorner = Instance.new("UICorner")
-UICorner.Parent = Frame
-UICorner.CornerRadius = UDim.new(0, 15)
-
--- Текст «LerkuHUB» в левом верхнем углу (с отступом 10 px)
-local TextLabel = Instance.new("TextLabel")
-TextLabel.Parent = Frame
-TextLabel.Position = UDim2.new(0, 10, 0, 10)
-TextLabel.Size = UDim2.new(0, 300, 0, 40)
-TextLabel.Text = "LerkuHUB│BABFT"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = false
-TextLabel.TextSize = 24
-TextLabel.BackgroundTransparency = 1
-TextLabel.Font = Enum.Font.GothamBold
-TextLabel.TextXAlignment = Enum.TextXAlignment.Left
-
--- Кнопка закрытия
-local CloseButton = Instance.new("TextButton")
-CloseButton.Parent = Frame
-CloseButton.Position = UDim2.new(1, -40, 0, 10)
-CloseButton.Size = UDim2.new(0, 30, 0, 30)
-CloseButton.Text = "×"
-CloseButton.TextSize = 22
-CloseButton.TextColor3 = Color3.fromRGB(255, 50, 50)
-CloseButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-CloseButton.BackgroundTransparency = 0.2
-CloseButton.BorderSizePixel = 0
-
 -- Закругление углов кнопки
 local ButtonCorner = Instance.new("UICorner")
 ButtonCorner.Parent = CloseButton
@@ -56,14 +11,14 @@ end)
 -- Кнопка запуска телепорта
 local TeleportButton = Instance.new("TextButton")
 TeleportButton.Parent = Frame
-TeleportButton.Position = UDim2.new(0.5, -75, 0.5, -25)  -- По центру ниже текста
-TeleportButton.Size = UDim2.new(0, 150, 0, 50)
+TeleportButton.Position = UDim2.new(0.5, -125, 0.5, -25)  -- По центру ниже текста
+TeleportButton.Size = UDim2.new(0, 250, 0, 100)
 TeleportButton.Text = "Start Teleport"
 TeleportButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TeleportButton.BackgroundColor3 = Color3.fromRGB(70, 130, 255)
 TeleportButton.BackgroundTransparency = 0.1
 TeleportButton.BorderSizePixel = 0
-TeleportButton.TextSize = 18
+TeleportButton.TextSize = 30
 TeleportButton.Font = Enum.Font.GothamSemibold
 
 -- Закругление углов кнопки телепорта
