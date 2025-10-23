@@ -33,7 +33,7 @@ TextLabel.TextXAlignment = Enum.TextXAlignment.Center  -- выравнивани
 TextLabel.TextYAlignment = Enum.TextYAlignment.Center  -- выравнивание по вертикали
 
 -- Плавное исчезновение через 5 секундh
-task.delay(1, function()
+task.delay(2, function()
     game:GetService("TweenService"):Create(
         Frame,
         TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.In),
@@ -46,7 +46,7 @@ task.delay(1, function()
     end)
 end)
 
-wait(6)
+wait(3.5)
 
 -- Создаём ScreenGui
 local ScreenGui = Instance.new("ScreenGui")
