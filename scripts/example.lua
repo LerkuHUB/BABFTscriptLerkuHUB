@@ -83,7 +83,7 @@ TextLabel.TextXAlignment = Enum.TextXAlignment.Center  -- выравнивани
 TextLabel.TextYAlignment = Enum.TextYAlignment.Center  -- выравнивание по вертикали
 
 -- Плавное исчезновение через 5 секунд
-task.delay(5, function()
+task.delay(2.5, function()
     game:GetService("TweenService"):Create(
         Frame,
         TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.In),
